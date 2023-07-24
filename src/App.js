@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar, Hero, Analitics, Card} from './components/';
+import {Navbar, Hero, Analitics, Card, Footer} from './components/';
 import Newsletter from './components/Newsletter';
 
 
@@ -11,6 +11,7 @@ function App() {
         <Analitics />
         <Newsletter />
         <Card/>
+        <Footer/>
     </div>
   );
 }

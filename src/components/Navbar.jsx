@@ -18,7 +18,7 @@ const Navbar = () => {
             {!nav && <AiOutlineMenu size={20} />}
             {nav && <AiOutlineClose size={20} />}
         </div>
-        <div className={`fixed ${nav ? 'left-0' : '-left-full'} transition-all duration-500 ease-in-out top-0 h-full w-[60%] border-r border-r-gray-900  bg-[#000300]`}>
+        <div className={`fixed ${nav ? 'left-0' : '-left-full'} z-50 md:-left-full transition-all duration-500 ease-in-out top-0 h-full w-[60%] border-r border-r-gray-900  bg-[#000300]`}>
         <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
             <ul className='p-4 uppercase divide-y divide-gray-600'>
             <li className='p-4'>Home</li>
@@ -29,6 +29,7 @@ const Navbar = () => {
             </ul>
         </div>
     </div>
+    {/* <div className={`${nav && 'bg-black/75'} md:bg-tranparent h-full w-full fixed top-0 left-0`} onClick={()=> setNav(prev => !prev)}/> */}
     </div>
   )
 }
